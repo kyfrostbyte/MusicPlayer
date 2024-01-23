@@ -36,9 +36,6 @@ namespace MusicPlayer {
 		}
 
 	private: System::Windows::Forms::Button^ button2;
-	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Button^ button3;
-	private: System::Windows::Forms::TextBox^ textBox1;
 	protected:
 
 	private:
@@ -55,53 +52,18 @@ namespace MusicPlayer {
 		void InitializeComponent(void)
 		{
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// button2
 			// 
 			this->button2->BackColor = System::Drawing::SystemColors::ButtonFace;
-			this->button2->Location = System::Drawing::Point(250, 400);
+			this->button2->Location = System::Drawing::Point(250, 441);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(100, 100);
+			this->button2->Size = System::Drawing::Size(75, 40);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Play";
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(400, 400);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(100, 100);
-			this->button1->TabIndex = 2;
-			this->button1->Text = L"Next Song";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
-			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(100, 400);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(100, 100);
-			this->button3->TabIndex = 3;
-			this->button3->Text = L"Previous Song";
-			this->button3->UseVisualStyleBackColor = true;
-			// 
-			// textBox1
-			// 
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Verdana", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(150, 79);
-			this->textBox1->Multiline = true;
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(300, 35);
-			this->textBox1->TabIndex = 4;
-			this->textBox1->Text = L"Song Name";
-			this->textBox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
 			// 
 			// MyForm
 			// 
@@ -109,15 +71,11 @@ namespace MusicPlayer {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->ClientSize = System::Drawing::Size(584, 561);
-			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->button3);
-			this->Controls->Add(this->button1);
 			this->Controls->Add(this->button2);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion
@@ -126,9 +84,5 @@ namespace MusicPlayer {
 	}
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	}
-};
+	};
 }
