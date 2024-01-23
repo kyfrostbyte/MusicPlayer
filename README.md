@@ -16,12 +16,19 @@
 
 {Describe the programming language that you used and any libraries.}
 
+- Visual Studio
+- SDL
+- SDL_Mixer
+
+
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
 
+- [SDL](https://www.libsdl.org/)
 - [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+
+
 
 # Future Work
 
